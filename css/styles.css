@@ -17,20 +17,6 @@ section.portfolio {
   flex-wrap: wrap;
   gap: 20px;
   padding: 40px 20px;
-  width: 100%;
-  height: 100vh;
-}
-
-.section-1 {
-  background-color: #79818e;
-}
-
-.section-2 {
-  background-color: #8a8482;
-}
-
-.section-3 {
-  background-color: #1f789c;
 }
 
 .project-card {
