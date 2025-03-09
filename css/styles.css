@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Arial", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 html,
@@ -17,19 +17,53 @@ body {
   color: #fff;
 }
 
+.intro {
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 15vw;
+  font-weight: 200;
+}
+
+#title {
+  text-transform: uppercase;
+  color: #aaa8a8;
+  font-size: 5vw;
+}
+
+#desc {
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 9px 40px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #aaa8a8;
+}
+
 section.portfolio {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
-  position: relative;
+  min-height: 100vh;
   overflow: hidden;
   scroll-snap-align: start;
   scroll-snap-type: y mandatory;
-  margin: 0;
-  padding: 0;
 }
 
 .project-card {
@@ -42,7 +76,7 @@ section.portfolio {
 
 .project-thumbnail {
   width: 100%;
-  height: 500px;
+  max-height: 500px;
   overflow: hidden;
   position: relative;
 }
@@ -92,4 +126,14 @@ section.portfolio {
   position: relative;
   will-change: transform;
   transition: transform 0.1s linear;
+}
+
+@media (min-width: 768px) {
+  .intro h1 {
+    font-size: 120px;
+  }
+
+  #title {
+    font-size: 35px;
+  }
 }

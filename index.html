@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <!-- JavaScript -->
@@ -10,7 +17,16 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <section class="portfolio" data-speed="0.3">
+    <section class="intro">
+      <h1>Maya Thompson</h1>
+      <p id="title">Frontend Developer</p>
+      <p id="desc">
+        Crafting beautiful, user-friendly websites with a passion for clean code
+        and design.
+      </p>
+      <a href="#portfolio" class="cta-btn">View My Work</a>
+    </section>
+    <section class="portfolio" id="portfolio" data-speed="0.3">
       <div class="project-card">
         <div class="project-thumbnail">
           <img src="images/por1.jpg" alt="Project 1 Thumbnail" />
