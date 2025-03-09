@@ -41,8 +41,12 @@ A playful and responsive website for the _Oslo Science Museum_. Built with HTML,
 A blog platform for _HotView Labs_, featuring sorting, pagination, and dynamic post management. This project demonstrates my ability to build functional websites with the following:
 
 - Custom sorting and pagination
-- Dynamic content loading
+- Dynamic content loading using the Noroff API
 - Responsive layout
+
+#### API Usage:
+
+This project integrates the [Noroff API v2](https://docs.noroff.dev/docs/v2) to dynamically fetch blog posts, display them with sorting and pagination features, and allow for CRUD operations on blog content.
 
 [View Project](https://hotviewlabs1.netlify.app/) | [GitHub Repo](https://github.com/NoroffFEU/FED1-PE1-Mayamariaruth)
 

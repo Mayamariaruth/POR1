@@ -1,34 +1,51 @@
 // Parallax scroll functionality
 let isScrolling = false;
+const sections = document.querySelectorAll("section");
+let currentSectionIndex = 0;
 
-document.addEventListener("wheel", () => (isScrolling = true));
-document.addEventListener("touchmove", () => (isScrolling = true));
+// Prevent default scroll behavior and scroll only between sections
+document.addEventListener("wheel", handleScroll, { passive: false });
+document.addEventListener("touchmove", handleScroll, { passive: false });
 
-const sections = document.querySelectorAll(".portfolio");
-const options = {
-  threshold: 0.75,
-};
+// Function to handle the scroll event
+function handleScroll(event) {
+  if (isScrolling) return;
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting && isScrolling) {
-      isScrolling = false;
-      smoothScrollToSection(entry.target);
-    }
+  event.preventDefault();
+
+  isScrolling = true;
+
+  if (event.deltaY > 0) {
+    goToNextSection();
+  } else {
+    goToPreviousSection();
+  }
+
+  setTimeout(() => {
+    isScrolling = false;
+  }, 1500);
+}
+
+// Move to the next section
+function goToNextSection() {
+  if (currentSectionIndex < sections.length - 1) {
+    currentSectionIndex++;
+    scrollToSection(currentSectionIndex);
+  }
+}
+
+// Move to the previous section
+function goToPreviousSection() {
+  if (currentSectionIndex > 0) {
+    currentSectionIndex--;
+    scrollToSection(currentSectionIndex);
+  }
+}
+
+// Scroll to the specific section based on index
+function scrollToSection(index) {
+  sections[index].scrollIntoView({
+    behavior: "smooth",
+    block: "start",
   });
-}, options);
-
-sections.forEach((section) => observer.observe(section));
-
-// Delay to smooth out scroll snapping
-let scrollTimeout;
-
-const smoothScrollToSection = (section) => {
-  clearTimeout(scrollTimeout);
-  scrollTimeout = setTimeout(() => {
-    section.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }, 100);
-};
+}
