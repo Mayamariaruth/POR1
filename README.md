@@ -10,6 +10,7 @@ Welcome to my online portfolio! I am a **Frontend Developer** with a passion for
 2. [Technologies Used](#technologies-used)
 3. [How to Run](#how-to-run)
 4. [Contact](#contact)
+5. [Acknowledgments](#acknowledgments)
 
 ## Projects
 
