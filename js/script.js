@@ -1,29 +1,34 @@
 // Parallax scroll functionality
-document.addEventListener("scroll", function () {
-  const parallaxElements = document.querySelectorAll(".portfolio");
+let isScrolling = false;
 
-  parallaxElements.forEach((element) => {
-    const speed = parseFloat(element.getAttribute("data-speed"));
-    const offset = window.pageYOffset - element.offsetTop;
-    element.style.transform = `translateY(${offset * speed * 0.3}px)`;
-  });
-});
+document.addEventListener("wheel", () => (isScrolling = true));
+document.addEventListener("touchmove", () => (isScrolling = true));
 
-// Snap scrolling to each section using IntersectionObserver
 const sections = document.querySelectorAll(".portfolio");
 const options = {
-  threshold: 0.5,
+  threshold: 0.75,
 };
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+    if (entry.isIntersecting && isScrolling) {
+      isScrolling = false;
+      smoothScrollToSection(entry.target);
     }
   });
 }, options);
 
 sections.forEach((section) => observer.observe(section));
+
+// Delay to smooth out scroll snapping
+let scrollTimeout;
+
+const smoothScrollToSection = (section) => {
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => {
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }, 100);
+};
