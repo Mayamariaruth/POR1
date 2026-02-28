@@ -187,13 +187,20 @@ section.portfolio {
 }
 
 /* Article pages */
+.go-back {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
 .article-container {
-  height: 180vh;
+  height: 190vh;
   background-image: url(../assets/images/home/hero.jpg);
   background-size: cover;
   background-position: center;
   position: absolute;
   width: 100%;
+  padding: 10px 16px;
 }
 
 .article {
