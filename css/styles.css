@@ -188,7 +188,7 @@ section.portfolio {
 
 /* Article pages */
 .article-container {
-  height: 150vh;
+  height: 180vh;
   background-image: url(../assets/images/home/hero.jpg);
   background-size: cover;
   background-position: center;
@@ -232,7 +232,14 @@ section.portfolio {
 .content p {
   margin-bottom: 15px;
   line-height: 1.6;
-  font-size: 1rem;
+}
+
+.article-description {
+  font-size: 18px;
+}
+
+.features-headline {
+  font-size: 22px;
 }
 
 .btn {
@@ -257,6 +264,11 @@ section.portfolio {
   border: none;
   cursor: pointer;
   font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.content ul {
+  margin-left: 30px;
 }
 
 /* Media Queries */
