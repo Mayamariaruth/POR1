@@ -7,63 +7,74 @@ Welcome to my online portfolio! I am a **Frontend Developer** with a passion for
 ## Table of Contents
 
 1. [Projects](#projects)
-2. [Technologies Used](#technologies-used)
+2. [Portfolio Technologies ](#portfolio-technologies)
 3. [How to Run](#how-to-run)
 4. [Contact](#contact)
 5. [Acknowledgments](#acknowledgments)
 
 ## Projects
 
-Here are a few of the projects I've worked on:
+Here are a few selected projects I’ve worked on during my front-end development studies:
+
+---
 
 ### 1. **Auction House**
 
-A front-end auction platform built with HTML5, CSS3, and vanilla JavaScript, integrating the Noroff API for dynamic data and user interaction. The project focuses on authentication, structured application logic, and real-time content updates without using a framework.
+Auction House is a front-end auction platform designed for students at Noroff. The application allows registered users to create, manage, and participate in auctions through a modern, responsive interface. The project focuses on structured application logic, API integration, and user interaction without using a front-end framework.
+
+The platform emphasizes transparency and usability, enabling users to showcase listings, track bids, and manage their profiles with full control over their content.
 
 #### Features
 
-- Browse and view active auction listings
-- View detailed item pages
-- Place bids on items
-- User registration and login
-- Responsive layout across devices
+- Create, edit, and delete auction listings
+- Browse and search active auctions
+- Place bids with live bid history
+- User registration and authentication
+- Profile customization (avatar, banner, bio)
+- Credit balance tracking
+- Responsive design across devices
 
 [View Project](https://mayamariaruth.github.io/auctionhouse/) | [GitHub Repo](https://github.com/Mayamariaruth/auctionhouse)
 
-### 2. **Shopella**
+---
 
-A simple e-commerce web application built with React, TypeScript, React Router, and Zustand for state management. It allows users to browse products, view details, add items to a shopping cart, adjust quantities, submit a contact form, and complete a mock checkout flow.
+### 2. **Shopella Store**
+
+Shopella is a modern e-commerce web application built with React and TypeScript. The project demonstrates component-based architecture, client-side routing, global state management, and form validation. It provides a smooth and intuitive shopping experience, from browsing products to completing a mock checkout flow.
+
+The application focuses on clean structure, user feedback, and responsive design using modern React best practices.
 
 #### Features
 
-- Browse products
-- View individual product details
-- Add and remove items from cart
-- Cart total calculation
-- Responsive and accessible design
+- Browse a dynamic product catalog
+- View individual product detail pages
+- Add, remove, and adjust product quantities in the cart
+- Persistent shopping cart using global state
+- Contact form with validation
+- Mock checkout flow
+- Responsive and accessible UI
 
 [View Project](https://shopellastore.netlify.app/) | [GitHub Repo](https://github.com/NoroffFEU/jsfw-2025-v1-javascript-frameworks-ca)
 
-### 3. **Chattr.**
+---
 
-A responsive social posting app interface built with Bootstrap and custom SCSS overrides. It showcases UI features such as creating new posts, viewing posts, and smooth interaction, with modern styling and accessibility considerations.
-**Note:** This is a fully static front-end demo without backend functionality.
+### 3. **Chattr**
+
+Chattr is a responsive social posting application interface built using Bootstrap with custom SCSS overrides. The project focuses on layout composition, accessibility, and visual consistency while simulating common UI patterns found in modern social platforms.
+
+This project is a **fully static front-end demo** and does not include backend functionality. Its primary purpose is to demonstrate structured HTML, responsive design, and framework customization.
 
 #### Features
 
-- Fetch and display posts
-- Create new posts
-- Edit existing posts
-- Delete posts
-- Responsive layout
+- Responsive new post form with client-side validation
+- Custom Bootstrap theme using SCSS variables
+- Accessible form inputs with labels and ARIA attributes
+- Structured and semantic HTML layout
+- Interactive UI states and modern styling
 
 [View Project](https://mayamariaruth.github.io/css-repo-cs/) | [GitHub Repo](https://github.com/Mayamariaruth/css-repo-cs)
 
-#### API Usage:
-
-This project integrates the [Noroff API v2](https://docs.noroff.dev/docs/v2) to dynamically fetch data, and allow for CRUD operations.
-
-## Portfolio tech stack
+## Portfolio technologies
 
 - **HTML5**
 - **CSS3**
