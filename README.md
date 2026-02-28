@@ -16,47 +16,60 @@ Welcome to my online portfolio! I am a **Frontend Developer** with a passion for
 
 Here are a few of the projects I've worked on:
 
-### 1. **Rainy Days**
+### 1. **Auction House**
 
-An e-commerce site for the _Rainy Days_ brand, built using HTML, CSS, and JavaScript. This project features:
+A front-end auction platform built with HTML5, CSS3, and vanilla JavaScript, integrating the Noroff API for dynamic data and user interaction. The project focuses on authentication, structured application logic, and real-time content updates without using a framework.
 
-- Product browsing
-- Cart management
-- Responsive design for all screen sizes
+#### Features
 
-[View Project](https://mayamariaruth.github.io/html-css-course-assignment/index.html) | [GitHub Repo](https://github.com/Mayamariaruth/html-css-course-assignment)
+- Browse and view active auction listings
+- View detailed item pages
+- Place bids on items
+- User registration and login
+- Responsive layout across devices
 
-### 2. **Oslo Science Museum**
+[View Project](https://mayamariaruth.github.io/auctionhouse/) | [GitHub Repo](https://github.com/Mayamariaruth/auctionhouse)
 
-A playful and responsive website for the _Oslo Science Museum_. Built with HTML, CSS, and JavaScript, this site is designed to engage both children and parents. Features include:
+### 2. **Shopella**
 
-- Interactive layout
-- Responsive design
-- Modern UI elements
+A simple e-commerce web application built with React, TypeScript, React Router, and Zustand for state management. It allows users to browse products, view details, add items to a shopping cart, adjust quantities, submit a contact form, and complete a mock checkout flow.
 
-[View Project](https://mayamariaruth.github.io/science-museum/) | [GitHub Repo](https://github.com/Mayamariaruth/science-museum)
+#### Features
 
-### 3. **HotView Labs Blog**
+- Browse products
+- View individual product details
+- Add and remove items from cart
+- Cart total calculation
+- Responsive and accessible design
 
-A blog platform for _HotView Labs_, featuring sorting, pagination, and dynamic post management. This project demonstrates my ability to build functional websites with the following:
+[View Project](https://shopellastore.netlify.app/) | [GitHub Repo](https://github.com/NoroffFEU/jsfw-2025-v1-javascript-frameworks-ca)
 
-- Custom sorting and pagination
-- Dynamic content loading using the Noroff API
+### 3. **Chattr.**
+
+A responsive social posting app interface built with Bootstrap and custom SCSS overrides. It showcases UI features such as creating new posts, viewing posts, and smooth interaction, with modern styling and accessibility considerations.
+**Note:** This is a fully static front-end demo without backend functionality.
+
+#### Features
+
+- Fetch and display posts
+- Create new posts
+- Edit existing posts
+- Delete posts
 - Responsive layout
+
+[View Project](https://mayamariaruth.github.io/css-repo-cs/) | [GitHub Repo](https://github.com/Mayamariaruth/css-repo-cs)
 
 #### API Usage:
 
-This project integrates the [Noroff API v2](https://docs.noroff.dev/docs/v2) to dynamically fetch blog posts, display them with sorting and pagination features, and allow for CRUD operations on blog content.
+This project integrates the [Noroff API v2](https://docs.noroff.dev/docs/v2) to dynamically fetch data, and allow for CRUD operations.
 
-[View Project](https://hotviewlabs1.netlify.app/) | [GitHub Repo](https://github.com/NoroffFEU/FED1-PE1-Mayamariaruth)
-
-## Technologies Used
+## Portfolio tech stack
 
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **GitHub** (for version control)
-- **Netlify** (for hosting)
+- **Git & GitHub** (for version control)
+- **GitHub Pages** (for hosting)
 
 ## How to Run
 
